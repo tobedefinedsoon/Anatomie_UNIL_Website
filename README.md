@@ -1,74 +1,104 @@
-# Anatomie UNIL Website
+# Anatomie UNIL - Landing Page
 
-Landing page officielle pour l'application iOS **Anatomie UNIL**, une application éducative développée pour l'Université de Lausanne (UNIL) destinée à l'apprentissage de l'anatomie musculaire.
+Landing page pour l'application iOS **Anatomie UNIL**, une application éducative pour l'apprentissage de l'anatomie musculaire.
 
-## À propos
+## 🚀 Développement local
 
-Ce projet héberge la landing page web de l'application mobile Anatomie UNIL, permettant aux visiteurs de découvrir les fonctionnalités de l'application et de la télécharger depuis l'App Store.
+### Prérequis
 
-**Lien App Store:** [Télécharger Anatomie UNIL](https://apps.apple.com/ch/app/anatomie-unil/id1222411841)
+- Node.js 18+ installé
+- npm ou yarn
 
-## Fonctionnalités de l'application
-
-- **Quiz interactifs** : Questions à choix multiples sur l'anatomie musculaire
-- **3 Catégories** : Membre supérieur, membre inférieur et tronc
-- **4 Types de questions** : Origine, terminaison, innervation et vascularisation des muscles
-- **Suivi des progrès** : Historique et statistiques détaillées de vos quiz
-
-## Structure du projet
-
-```
-Anatomie_UNIL_Website/
-└── landing-page/          # Application Next.js
-    ├── app/               # Pages et composants Next.js 15
-    │   ├── layout.tsx     # Layout principal
-    │   ├── page.tsx       # Page d'accueil
-    │   ├── globals.css    # Styles globaux
-    │   └── privacy/       # Page de confidentialité
-    ├── public/
-    │   └── screenshots/   # Captures d'écran de l'app
-    ├── next.config.ts
-    ├── tailwind.config.ts
-    └── package.json
-```
-
-## Technologies
-
-- **Next.js 15** - Framework React avec App Router
-- **TypeScript** - Typage statique
-- **Tailwind CSS** - Framework CSS utilitaire
-- **Vercel** - Plateforme d'hébergement et déploiement
-
-## Développement
-
-Pour lancer le projet en local, consultez le [README du landing-page](./landing-page/README.md) qui contient toutes les instructions détaillées.
-
-### Démarrage rapide
+### Installation
 
 ```bash
-cd landing-page
+# Installer les dépendances
 npm install
+```
+
+### Lancer en local
+
+```bash
+# Démarrer le serveur de développement
 npm run dev
 ```
 
-Ouvrez [http://localhost:3000](http://localhost:3000) pour voir la landing page.
+Ouvrez [http://localhost:3000](http://localhost:3000) dans votre navigateur pour voir la landing page.
 
-## Sections de la landing page
+### Build de production
 
-1. **Hero** - Présentation de l'application avec lien App Store
-2. **Fonctionnalités** - 4 features principales de l'application
-3. **Screenshots** - Galerie de captures d'écran de l'interface
-4. **CTA** - Call-to-action pour télécharger l'application
-5. **Footer** - Informations et lien vers la politique de confidentialité
+```bash
+# Créer le build de production
+npm run build
 
-## Déploiement
+# Démarrer le serveur de production
+npm start
+```
 
-Le site est déployé sur Vercel. Toute modification poussée sur la branche `master` déclenche automatiquement un déploiement en production.
+## 📦 Déploiement sur Vercel
 
-## Licence
+### Méthode 1 : Via GitHub (Recommandé)
 
-© 2025 Anatomie UNIL. Tous droits réservés.
+1. Pushez le code sur GitHub
+2. Connectez-vous sur [vercel.com](https://vercel.com)
+3. Cliquez sur "New Project"
+4. Importez votre repository GitHub
+5. Vercel détectera automatiquement Next.js et configurera le build
+6. Cliquez sur "Deploy"
 
-## Contact
+### Méthode 2 : Via CLI Vercel
 
-Pour plus d'informations sur l'application ou le projet, veuillez contacter l'Université de Lausanne (UNIL).
+```bash
+# Installer Vercel CLI
+npm i -g vercel
+
+# Se connecter à Vercel
+vercel login
+
+# Déployer
+vercel
+
+# Déployer en production
+vercel --prod
+```
+
+## 🏗️ Structure du projet
+
+```
+landing-page/
+├── app/
+│   ├── layout.tsx          # Layout principal
+│   ├── page.tsx            # Page d'accueil
+│   └── globals.css         # Styles globaux
+├── public/
+│   └── screenshots/        # Screenshots de l'app
+│       ├── QuizzMenu.png
+│       ├── QuizzItems.png
+│       ├── Results.png
+│       ├── CorrectAnswer.png
+│       └── WrongAnswer.png
+├── next.config.ts          # Configuration Next.js
+├── tailwind.config.ts      # Configuration Tailwind CSS
+└── package.json
+```
+
+## 🎨 Technologies utilisées
+
+- **Next.js 15** - Framework React
+- **TypeScript** - Typage statique
+- **Tailwind CSS** - Styling
+- **Vercel** - Hébergement et déploiement
+
+## 📝 Sections de la landing page
+
+1. **Hero** - Titre, description et bouton App Store
+2. **Fonctionnalités** - 4 features principales de l'app
+3. **Screenshots** - Galerie de captures d'écran
+4. **CTA** - Call-to-action final
+5. **Footer** - Informations de base
+
+## 🔗 Liens
+
+- [Documentation Next.js](https://nextjs.org/docs)
+- [Documentation Tailwind CSS](https://tailwindcss.com/docs)
+- [Documentation Vercel](https://vercel.com/docs)
