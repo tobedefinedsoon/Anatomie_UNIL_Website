@@ -118,50 +118,83 @@ export default function Home() {
               Aperçu de l'application
             </h2>
             <p className="text-xl text-gray-600">
-              Découvrez l'interface intuitive et moderne
+              Découvrez votre parcours pour valider le module BA3
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+            {/* Screenshot 1 */}
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform">
               <Image
-                src="/screenshots/QuizzMenu.png"
-                alt="Menu des quiz"
+                src="/screenshots/1-home.png"
+                alt="Validez votre module BA3"
                 width={400}
                 height={800}
                 className="w-full h-auto"
               />
               <div className="p-4">
-                <h3 className="font-semibold text-lg text-gray-900">Menu des quiz</h3>
-                <p className="text-gray-600">Choisissez votre catégorie</p>
+                <h3 className="font-semibold text-lg text-gray-900">Validez votre module BA3</h3>
+                <p className="text-gray-600 text-sm">Choisissez votre catégorie d'apprentissage</p>
               </div>
             </div>
 
+            {/* Screenshot 2 */}
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform">
               <Image
-                src="/screenshots/QuizzItems.png"
-                alt="Questions du quiz"
+                src="/screenshots/2-question-right.png"
+                alt="Renforcez votre maîtrise anatomique"
                 width={400}
                 height={800}
                 className="w-full h-auto"
               />
               <div className="p-4">
-                <h3 className="font-semibold text-lg text-gray-900">Questions</h3>
-                <p className="text-gray-600">Interface claire et intuitive</p>
+                <h3 className="font-semibold text-lg text-gray-900">Renforcez votre maîtrise</h3>
+                <p className="text-gray-600 text-sm">Chaque bonne réponse consolide votre apprentissage</p>
               </div>
             </div>
 
+            {/* Screenshot 3 */}
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform">
               <Image
-                src="/screenshots/Results.png"
-                alt="Résultats du quiz"
+                src="/screenshots/3-question-wrong.png"
+                alt="Apprenez de vos erreurs"
                 width={400}
                 height={800}
                 className="w-full h-auto"
               />
               <div className="p-4">
-                <h3 className="font-semibold text-lg text-gray-900">Résultats</h3>
-                <p className="text-gray-600">Suivez votre progression</p>
+                <h3 className="font-semibold text-lg text-gray-900">Apprenez de vos erreurs</h3>
+                <p className="text-gray-600 text-sm">Comprenez vos erreurs pour progresser</p>
+              </div>
+            </div>
+
+            {/* Screenshot 4 */}
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform">
+              <Image
+                src="/screenshots/4-results.png"
+                alt="Votre progression pour les examens"
+                width={400}
+                height={800}
+                className="w-full h-auto"
+              />
+              <div className="p-4">
+                <h3 className="font-semibold text-lg text-gray-900">Votre progression pour les examens</h3>
+                <p className="text-gray-600 text-sm">Suivez vos résultats en détail</p>
+              </div>
+            </div>
+
+            {/* Screenshot 5 */}
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform">
+              <Image
+                src="/screenshots/5-summary.png"
+                alt="Revisitez vos erreurs, signalez les inexactitudes"
+                width={400}
+                height={800}
+                className="w-full h-auto"
+              />
+              <div className="p-4">
+                <h3 className="font-semibold text-lg text-gray-900">Signalez les erreurs</h3>
+                <p className="text-gray-600 text-sm">Contribuez en signalant les inexactitudes et gagnez des récompenses</p>
               </div>
             </div>
           </div>
